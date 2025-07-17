@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.navbar{
+    background-color: aqua;
+    color: black;
+    height: 60px;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+
+.container{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.content{
+    padding: 15px;
+    height: 40%;
+    background-color: black;
+    color:white;
+    margin: 20px;
+    width: 25%;
+    border-radius: 20px;
+    
+}
+.content h2{
+    color: aqua;
+    padding-bottom: 10px;
+}
+.content button{
+    background-color: aquamarine;
+    color: black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    margin-top: 8px ;
+}
+#add-btn{
+    position:fixed;
+    left: 85%;
+    top: 80%;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    font-size: xx-large;
+    color: black;
+    background-color: aqua;
+    border: none;
+}
+.popup-overlay{
+    background-color: black;
+    opacity:0.7;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.popup-box{
+    background-color: aqua;
+    padding: 40px;
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    height: 40%;
+    width: 30%;
+    z-index: 2;
+    border-radius: 20px;
+    display: none;
+    opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease-in-out;
+}
+.popup-box.show {
+  display: block;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-overlay.show {
+  display: block;
+}
+.content button:hover,
+#bookadd:hover,
+#bookcancel:hover,
+#add-btn:hover {
+  background-color: black;
+  color: aqua;
+  transition: 0.3s ease;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+#add-btn:hover {
+  transform: scale(1.1) rotate(90deg);
+  transition: 0.3s ease-in-out;
+}
+
+
+.popup-box input{
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid black ;
+    background: transparent;
+}
+.popup-box textarea{
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid black ;
+    background: transparent;
+    resize: vertical;
+}
+
+.popup-box input::placeholder,.popup-box textarea::placeholder{
+    font-size: larger;
+    color: black;
+}
+
+#bookadd{
+    height: 40px;
+    width: 60px;
+    background-color: black;
+    color: white;
+
+}
+#bookcancel{
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    left: 30%;
+    background-color: black;
+    color: white;
+}
+.popup-box input:focus{
+    outline: none;
+}
+.popup-box textarea:focus{
+    outline: none;
+}

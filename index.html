@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book sky</title>
+    <link rel="stylesheet" href="booksky.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="navbar">
+            <h1>Book Store</h1>
+        </div>
+        <div class="container">
+            <div class="content">
+                    <h2>NON BLOODED BOND</h2>
+                    <h3>       --Kasi Naveen</h3>
+                    <p>sample:<br><ul style="position: relative;left: 20px;top: 10px;">
+                        <li>    “Sisters by heart, not by birth.”</li>
+                        <li>    “God made us friends, but fate made us sisters.”</li>
+                        <li>    “You’re the sister I got to choose.”</li>
+                    </ul></p><br>
+                    <button onclick="del(event)" >Delete</button>
+            </div>
+          
+         </div>
+           
+         <div class="popup-overlay" ></div>
+            <div class="popup-box">
+                 <h2>Add Book</h2>
+                 <form>
+                    <input type="text" placeholder="Book Title" id="book-title">
+                    <input type="text" placeholder="Book Author" id="book-author">
+                    <textarea placeholder="Description" id="book-description"></textarea>             
+                    <button id="bookadd">ADD</button><button id="bookcancel">CANCEL</button>                                
+                 </form>
+            </div>
+         <button id="add-btn" >+</button>
+         <script src="booksky.js"></script>
+</body>
+</html> 

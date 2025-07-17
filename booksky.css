@@ -2,6 +2,60 @@
     margin: 0;
     padding: 0;
 }
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .content {
+    width: 90%;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .popup-box {
+    width: 90%;
+    height: auto;
+    top: 25%;
+    padding: 20px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+  }
+
+  .popup-box.show {
+    transform: translateX(-50%) scale(1);
+  }
+
+  #bookcancel {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #bookadd {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #add-btn {
+    bottom: 20px;
+    right: 20px;
+    height: 45px;
+    width: 45px;
+    font-size: x-large;
+  }
+}
+
 body{
     font-family: "DM Serif Text", serif;
     font-weight: 400;
